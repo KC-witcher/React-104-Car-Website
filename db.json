@@ -1,5 +1,1 @@
-{
-  "favorites": [],
-  "users": [],
-  "cars": []
-}
+{"favorites":[],"users":[],"cars":[{"model":"F-Type","color":"red","year":2016,"price":50000,"company":"Jaguar","driveTerrain":"rwd","transmission":"automatic","condition":"used"},{"model":"Challenger","color":"grey","year":2019,"price":30000,"company":"Dodge","driveTerrain":"rwd","transmission":"manual","condition":"used"},{"model":"CT4","color":"white","year":2022,"price":45000,"company":"Cadillac","driveTerrain":"rwd","transmission":"manual","condition":"used"},{"model":"Bronco","color":"grey","year":2022,"price":35000,"company":"Ford","driveTerrain":"awd","transmission":"automatic","condition":"new"},{"model":"Mustang","color":"green","year":2022,"price":45000,"company":"Ford","driveTerrain":"rwd","transmission":"manual","condition":"used"},{"model":"Stinger","color":"black","year":2022,"price":50000,"company":"Kia","driveTerrain":"awd","transmission":"automatic","condition":"new"},{"model":"GR86","color":"blue","year":2022,"price":30000,"company":"Toyota","driveTerrain":"fwd","transmission":"manual","condition":"used"}]}
