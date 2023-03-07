@@ -1,5 +1,11 @@
 import React from "react";
+import { useAuthContext } from "../providers/auth-provider";
 
 export const Home = () => {
-  return <div>This is home</div>;
+  const { user } = useAuthContext();
+  return (
+    <div>
+      <h2>Welcome, {user?.username}</h2>
+    </div>
+  );
 };

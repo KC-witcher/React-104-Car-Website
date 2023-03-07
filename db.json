@@ -5,6 +5,16 @@
       "username": "Dean",
       "password": "password",
       "id": 1
+    },
+    {
+      "username": "sjkc",
+      "password": "password",
+      "id": 2
+    },
+    {
+      "username": "harry",
+      "password": "password",
+      "id": 3
     }
   ],
   "cars": [
