@@ -11,17 +11,26 @@
     "serve": "json-server --watch db.json"
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.32.2",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.11",
     "json-server": "^0.17.2",
+    "localforage": "^1.10.0",
     "lodash": "4.17.21",
     "lodash-es": "^4.17.21",
+    "match-sorter": "^6.3.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "2.4.0",
+    "react-router-dom": "^6.8.2",
+    "sort-by": "^0.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-react": "^7.32.2",
     "vite": "^4.1.0"
   }
 }

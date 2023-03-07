@@ -28,6 +28,7 @@ const db = {
       driveTerrain: "rwd",
       transmission: "automatic",
       condition: "used",
+      id: 1,
     },
     {
       model: "Challenger",
@@ -38,6 +39,7 @@ const db = {
       driveTerrain: "rwd",
       transmission: "manual",
       condition: "used",
+      id: 2,
     },
     {
       model: "CT4",
@@ -48,6 +50,7 @@ const db = {
       driveTerrain: "rwd",
       transmission: "manual",
       condition: "used",
+      id: 3,
     },
     {
       model: "Bronco",
@@ -58,6 +61,7 @@ const db = {
       driveTerrain: "awd",
       transmission: "automatic",
       condition: "new",
+      id: 4,
     },
     {
       model: "Mustang",
@@ -68,6 +72,7 @@ const db = {
       driveTerrain: "rwd",
       transmission: "manual",
       condition: "used",
+      id: 5,
     },
     {
       model: "Stinger",
@@ -78,6 +83,7 @@ const db = {
       driveTerrain: "awd",
       transmission: "automatic",
       condition: "new",
+      id: 6,
     },
     {
       model: "GR86",
@@ -88,6 +94,7 @@ const db = {
       driveTerrain: "fwd",
       transmission: "manual",
       condition: "used",
+      id: 7,
     },
   ],
 };
