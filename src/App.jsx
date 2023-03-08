@@ -4,6 +4,7 @@ import { AuthProvider } from "./providers/auth-provider";
 import { Signup } from "./components/Signup";
 import { Login } from "./components/Login";
 import { Home } from "./components/Home";
+import { Favorite } from "./components/Favorites";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route exact path="/" element={<Login />} />
           <Route exact path="/signup" element={<Signup />} />
           <Route exact path="/home" element={<Home />} />
+          <Route exact path="/favorite" element={<Favorite />} />
         </Routes>
       </Router>
     </AuthProvider>

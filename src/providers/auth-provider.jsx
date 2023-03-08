@@ -19,6 +19,7 @@ export const AuthProvider = ({ children }) => {
     if (user.password != password) {
       throw new Error("Incorrect Password");
     }
+    localStorage.setItem("user", JSON.stringify(user));
     setUser(user);
   };
 
