@@ -28,6 +28,7 @@ const db = {
       driveTerrain: "rwd",
       transmission: "automatic",
       condition: "used",
+      image: image[0],
       id: 1,
     },
     {
@@ -39,6 +40,7 @@ const db = {
       driveTerrain: "rwd",
       transmission: "manual",
       condition: "used",
+      image: image[1],
       id: 2,
     },
     {
@@ -50,6 +52,7 @@ const db = {
       driveTerrain: "rwd",
       transmission: "manual",
       condition: "used",
+      image: image[2],
       id: 3,
     },
     {
@@ -61,6 +64,7 @@ const db = {
       driveTerrain: "awd",
       transmission: "automatic",
       condition: "new",
+      image: image[3],
       id: 4,
     },
     {
@@ -72,6 +76,7 @@ const db = {
       driveTerrain: "rwd",
       transmission: "manual",
       condition: "used",
+      image: image[4],
       id: 5,
     },
     {
@@ -83,6 +88,7 @@ const db = {
       driveTerrain: "awd",
       transmission: "automatic",
       condition: "new",
+      image: image[5],
       id: 6,
     },
     {
@@ -94,6 +100,7 @@ const db = {
       driveTerrain: "fwd",
       transmission: "manual",
       condition: "used",
+      image: image[6],
       id: 7,
     },
   ],

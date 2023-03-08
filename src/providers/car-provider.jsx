@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import { getCars } from "../api/cars/get-cars";
 import { addCar } from "../api/cars/create-car";
 
@@ -59,7 +59,7 @@ export const CarsProvider = ({ children }) => {
 export const useCar = () => {
   const context = useContext(CarsContext);
   return {
-    car: context.car,
+    cars: context.car,
     setCar: context.setCar,
     createCar: context.createCar,
   };
