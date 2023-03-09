@@ -1,7 +1,7 @@
 import { API_CONFIG } from "../config";
 
-export const getAllFavorites = () => {
-  return fetch(API_CONFIG.baseUrl + "/favorites").then((response) => {
+export const getAllFavorites = async () => {
+  return await fetch(API_CONFIG.baseUrl + "/favorites").then((response) => {
     if (!response.ok) {
       throw new Error("Failed to Get Favorites");
     }
@@ -9,8 +9,8 @@ export const getAllFavorites = () => {
   });
 };
 
-export const crateFavorite = ({ userId, carId }) => {
-  fetch(API_CONFIG.baseUrl + "/favorites", {
+export const crateFavorite = async ({ userId, carId }) => {
+  await fetch(API_CONFIG.baseUrl + "/favorites", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -24,8 +24,8 @@ export const crateFavorite = ({ userId, carId }) => {
   });
 };
 
-export const deleteFavorite = (id) => {
-  fetch(API_CONFIG.baseUrl + "/favorites/" + id, {
+export const deleteFavorite = async (id) => {
+  await fetch(API_CONFIG.baseUrl + "/favorites/" + id, {
     method: "DELETE",
   }).then((response) => {
     if (!response.ok) {
@@ -42,10 +42,10 @@ export const toggleFavoriteAPI = async ({ userId, carId }) => {
   );
   if (!matchingFavorite) {
     // createone
-    return await crateFavorite({ userId, carId });
+    return crateFavorite({ userId, carId });
   }
 
-  return await deleteFavorite(matchingFavorite.id);
+  return deleteFavorite(matchingFavorite.id);
 
   // delete matching favorite
 };

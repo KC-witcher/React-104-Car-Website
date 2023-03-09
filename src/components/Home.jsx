@@ -8,7 +8,7 @@ export const Home = () => {
   const { user } = useAuthContext();
   const { cars } = useCar();
   const { favorites, toggleFavorite } = useFavorites();
-  console.log(cars);
+
   return (
     <div>
       <Nav />

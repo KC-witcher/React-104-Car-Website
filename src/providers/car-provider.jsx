@@ -15,40 +15,11 @@ export const CarsProvider = ({ children }) => {
     refetch();
   }, []);
 
-  const createCar = ({
-    model,
-    color,
-    year,
-    price,
-    company,
-    driverTerrain,
-    transmission,
-    condition,
-  }) => {
-    return addCar(
-      model,
-      color,
-      year,
-      price,
-      company,
-      driverTerrain,
-      transmission,
-      condition
-    ).then((response) => {
-      if (!response.ok) {
-        alter("Something Failed!");
-        return;
-      }
-      refetch();
-    });
-  };
-
   return (
     <CarsContext.Provider
       value={{
         car,
         setCar,
-        createCar,
       }}
     >
       {children}
@@ -61,6 +32,5 @@ export const useCar = () => {
   return {
     cars: context.car,
     setCar: context.setCar,
-    createCar: context.createCar,
   };
 };
