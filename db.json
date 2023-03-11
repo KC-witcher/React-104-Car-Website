@@ -1,10 +1,46 @@
 {
-  "favorites": [],
+  "favorites": [
+    {
+      "userId": 1,
+      "carId": 7,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "carId": 6,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "carId": 5,
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "carId": 3,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "carId": 6,
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "carId": 5,
+      "id": 8
+    }
+  ],
   "users": [
     {
       "username": "Dean",
       "password": "password",
       "id": 1
+    },
+    {
+      "username": "harry",
+      "password": "password",
+      "id": 2
     }
   ],
   "cars": [

@@ -10,7 +10,7 @@ export const Login = () => {
   const [loginUsername, setLoginUserName] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
 
-  const { user, login, registerUser } = useAuthContext();
+  const { user, login } = useAuthContext();
 
   const userLogin = () => {
     login({ username: loginUsername, password: loginPassword })

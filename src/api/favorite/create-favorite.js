@@ -41,11 +41,8 @@ export const toggleFavoriteAPI = async ({ userId, carId }) => {
     (favorite) => favorite.userId === userId && favorite.carId === carId
   );
   if (!matchingFavorite) {
-    // createone
     return crateFavorite({ userId, carId });
   }
 
   return deleteFavorite(matchingFavorite.id);
-
-  // delete matching favorite
 };
