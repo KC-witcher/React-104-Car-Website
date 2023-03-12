@@ -1,6 +1,15 @@
 body {
   background-color: whitesmoke;
 }
+.change-font {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-layout {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
 
 .center {
   display: flex;

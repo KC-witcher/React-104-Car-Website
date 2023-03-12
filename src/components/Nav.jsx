@@ -9,6 +9,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
+import Tooltip from "@mui/material/Tooltip";
 
 import { useAuthContext } from "../providers/auth-provider";
 import "./App.css";
@@ -41,20 +42,24 @@ export const Nav = () => {
               to={"/favorite"}
               style={{ textDecoration: "none", color: "white" }}
             >
-              <Button color="inherit">View Favorite(s)</Button>
+              <Tooltip title="Your Favorite(s)" arrow>
+                <Button color="inherit">View Favorite(s)</Button>
+              </Tooltip>
             </Link>
           </Typography>
           <div>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleMenu}
-              color="inherit"
-            >
-              <AccountCircle />
-            </IconButton>
+            <Tooltip title="Profile" arrow>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleMenu}
+                color="inherit"
+              >
+                <AccountCircle />
+              </IconButton>
+            </Tooltip>
             <Menu
               id="menu-appbar"
               anchorEl={anchorEl}

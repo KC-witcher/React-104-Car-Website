@@ -1,34 +1,19 @@
 {
   "favorites": [
     {
-      "userId": 1,
-      "carId": 7,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "carId": 6,
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "carId": 5,
-      "id": 3
-    },
-    {
       "userId": 2,
-      "carId": 3,
+      "carId": 2,
       "id": 5
     },
     {
       "userId": 2,
-      "carId": 6,
+      "carId": 3,
       "id": 6
     },
     {
       "userId": 2,
-      "carId": 5,
-      "id": 8
+      "carId": 4,
+      "id": 7
     }
   ],
   "users": [

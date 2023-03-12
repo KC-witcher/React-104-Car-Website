@@ -3,6 +3,32 @@ import { Nav } from "./Nav";
 import { useCar } from "../providers/car-provider";
 import { useAuthContext } from "../providers/auth-provider";
 import { useFavorites } from "../providers/fav-provider";
+import {
+  Card,
+  CardHeader,
+  CardMedia,
+  CardActions,
+  IconButton,
+  CardContent,
+  Collapse,
+  Typography,
+  Box,
+  Grid,
+} from "@mui/material";
+import { styled } from "@mui/material/styles";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "./App.css";
+
+const ExpandMore = styled((props) => {
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
+  marginLeft: "auto",
+  transition: theme.transitions.create("transform", {
+    duration: theme.transitions.duration.shortest,
+  }),
+}));
 
 export const Favorite = () => {
   const { cars } = useCar();
@@ -24,7 +50,7 @@ export const Favorite = () => {
   return (
     <div>
       <Nav />
-      <div
+      {/* <div
         className="App"
         style={{
           display: "flex",
@@ -66,7 +92,54 @@ export const Favorite = () => {
             );
           }
         )}
-      </div>
+      </div> */}
+      <Grid container rowSpacing={20} className="grid-layout">
+        {favoriteCars.map((favorite) => {
+          const [expanded, setExpanded] = useState(false);
+
+          const handleExpandClick = () => {
+            setExpanded(!expanded);
+          };
+
+          return (
+            <Grid item>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardHeader
+                  title={`${favorite.company} ${favorite.model}`}
+                  subheader={favorite.year}
+                />
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={favorite.image}
+                  alt={favorite.model}
+                />
+                <CardActions disableSpacing>
+                  <ExpandMore
+                    expand={expanded}
+                    onClick={handleExpandClick}
+                    aria-expanded={expanded}
+                    aria-label="show more"
+                  >
+                    <ExpandMoreIcon />
+                  </ExpandMore>
+                </CardActions>
+
+                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                  <CardContent>
+                    <Typography paragraph>
+                      This {favorite.condition} {favorite.color} {favorite.year}{" "}
+                      {favorite.company} {favorite.model} is on sale for $
+                      {favorite.price}!! It is {favorite.driveTerrain} vehicle
+                      with {favorite.transmission} transmission
+                    </Typography>
+                  </CardContent>
+                </Collapse>
+              </Card>
+            </Grid>
+          );
+        })}
+      </Grid>
     </div>
   );
 };
