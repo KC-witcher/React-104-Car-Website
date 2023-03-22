@@ -14,6 +14,16 @@
       "userId": 2,
       "carId": 4,
       "id": 7
+    },
+    {
+      "userId": 1,
+      "carId": 2,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "carId": 1,
+      "id": 9
     }
   ],
   "users": [
